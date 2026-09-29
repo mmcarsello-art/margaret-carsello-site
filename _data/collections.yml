@@ -1,0 +1,53 @@
+categories:
+  - category: Vessels & the body
+    items:
+      - title: Vessels
+        slug: vessels
+        code: "MC—01"
+      - title: Noble Women Reframed
+        slug: noble-women-reframed
+        code: "MC—02"
+      - title: Body as Vessel
+        slug: body-as-vessel
+        code: "MC—03"
+      - title: The Weight of It All
+        slug: weight-of-it-all
+        code: "MC—04"
+      - title: Balloon Bling
+        slug: balloon-bling
+        code: "MC—05"
+
+  - category: Material & surface
+    items:
+      - title: Material Objects
+        slug: material-objects
+        code: "MC—06"
+      - title: Shifting Shimmers
+        slug: shifting-shimmers
+        code: "MC—07"
+      - title: Swollen Doodle
+        slug: swollen-doodle
+        code: "MC—08"
+      - title: Nature as Muse
+        slug: nature-as-muse
+        code: "MC—09"
+
+  - category: Digital self
+    items:
+      - title: "Digital Culture: The Performance of Self"
+        slug: digital-culture
+        code: "MC—10"
+      - title: Everything Leaves a Trail
+        slug: everything-leaves-a-trail
+        code: "MC—11"
+
+moving_image:
+  - title: Everything Leaves a Trail
+    slug: everything-leaves-a-trail-video
+    code: "MI—01"
+  - title: The Tourist Project
+    slug: tourist-project
+    code: "MI—02"
+  - title: Performed Geographies, India
+    slug: performed-geographies-india
+    code: "MI—03"

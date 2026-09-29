@@ -1,0 +1,49 @@
+<header class="nav">
+  <div class="nav-row">
+    <a class="brand" href="{{ '/' | relative_url }}">
+      <svg viewBox="0 0 40 64" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M16 4 H24 V10 C30 12 33 20 33 28 C33 42 28 52 20 58 C12 52 7 42 7 28 C7 20 10 12 16 10 Z"/></svg>
+      Margaret Carsello
+    </a>
+    <button class="hamburger" aria-label="Open menu" aria-expanded="false" id="hamburgerBtn">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links" id="navLinks">
+      <button aria-expanded="false" data-mega="work">Work
+        <svg viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M1 1l4 4 4-4"/></svg>
+      </button>
+      <button aria-expanded="false" data-mega="moving">Moving image
+        <svg viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M1 1l4 4 4-4"/></svg>
+      </button>
+      <a href="{{ '/about/' | relative_url }}">About</a>
+      <a href="{{ '/contact/' | relative_url }}">Contact</a>
+
+      <div class="mega" id="mega-work">
+        <div class="mega-row">
+          {% for group in site.data.collections.categories %}
+          <div class="mega-col">
+            <h4>{{ group.category }}</h4>
+            <ul>
+              {% for item in group.items %}
+              <li><a href="{{ '/work/' | append: item.slug | append: '/' | relative_url }}">{{ item.title }}</a></li>
+              {% endfor %}
+            </ul>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+
+      <div class="mega" id="mega-moving">
+        <div class="mega-row">
+          <div class="mega-col">
+            <h4>Moving image</h4>
+            <ul>
+              {% for item in site.data.collections.moving_image %}
+              <li><a href="{{ '/moving-image/' | append: item.slug | append: '/' | relative_url }}">{{ item.title }}</a></li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
